@@ -1,0 +1,25 @@
+@import "../1_Variables/_variables.scss";
+
+
+@mixin box-shadow {
+    box-shadow: 0px 0px 6px 6px #e7e2e2;
+    -webkit-box-shadow: 0px 0px 6px 6px #e7e2e2;
+    -moz-box-shadow: 0px 0px 6px 6px #e7e2e2;
+}
+
+@mixin links {
+    color: $color-main;
+    text-decoration: none;
+}
+
+@mixin mainpage--name {
+    font-size: 1.6rem;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+@mixin mainpage--menu {
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin: 0rem;
+}

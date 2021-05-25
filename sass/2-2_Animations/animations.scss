@@ -1,0 +1,255 @@
+@import "../1_Variables/_variables.scss";
+@import '../2_Mixins/_mixins.scss';
+
+/* ===================================== ANIMATION WIGGLE NAV =============================== */
+
+.legal:hover {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  perspective: 1000px;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.index:hover {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  perspective: 1000px;
+  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.contact:hover {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  perspective: 1000px;
+  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+/* ============================= ANIMATION TROIS POINTS =========================== */
+
+.dots {
+  content: ".";
+  animation: dots 1.2s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: #FFCA28;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  80%, 100% {
+    text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 #FFCA28;
+  }
+}
+
+/* ========================= ANIMATION ZOOM SUR ITEMS MENU ====================== */
+.zoom-wrapper
+ {
+   display: inline-block;
+   overflow: hidden;
+   transition: transform 0.4s ease-in-out 0s;
+ }
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .french .zoom-wrapper:hover {
+    transform: scale(1.2)!important;
+    -ms-transform:scale(1.2)!important;
+    -moz-transform:scale(1.2)!important;
+    -webkit-transform:scale(1.2)!important;
+    -o-transform:scale(1.2)!important;
+   }
+  }
+
+ @media (min-width: 1000px) {
+  .zoom-wrapper:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.4)!important;
+    -ms-transform:scale(1.4)!important;
+    -moz-transform:scale(1.4)!important;
+    -webkit-transform:scale(1.4)!important;
+    -o-transform:scale(1.4)!important;
+    opacity: 0.5 !important;
+   }
+ }
+
+/* ================================== ANIMATION SOULIGNEMENT =================================== */
+
+.enchanted--underline:after {    
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2.5px;
+    left: 50%;
+    background: black;
+    transition: width 0.6s ease 0s, left 0.6s ease 0s;
+    width: 0;
+  }
+
+  .enchanted--underline:hover:after { 
+    width: 100%; 
+    left: 0;
+  }
+
+/* French entrée */
+
+.french--underline:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2.5px;
+    left: 50%;
+    transition: width 0.6s ease 0s, left 0.6s ease 0s;
+    width: 0;
+    background: #C67412;
+}
+
+.french--underline:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+/* French plat */
+
+.french--underlineTwo:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2.5px;
+    left: 50%;
+    transition: width 0.6s ease 0s, left 0.6s ease 0s;
+    width: 0;
+    background: #A56799;
+}
+
+.french--underlineTwo:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+/* French dessert */
+
+.french--underlineThree:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2.5px;
+    left: 50%;
+    transition: width 0.6s ease 0s, left 0.6s ease 0s;
+    width: 0;
+    background: #6E4CCC;
+}
+
+.french--underlineThree:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+.papilles--underline:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2.5px;
+    left: 50%;
+    transition: width 0.6s ease 0s, left 0.6s ease 0s;
+    width: 0;
+    background: -webkit-linear-gradient(360deg, rgb(14, 14, 172), rgb(103, 174, 241));
+}
+
+.papilles--underline:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+.gout--underline:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2.5px;
+    left: 50%;
+    transition: width 0.6s ease 0s, left 0.6s ease 0s;
+    width: 0;
+    background: -webkit-linear-gradient(360deg, #52A445, #BEFF7F);
+}
+
+.gout--underline:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.legal--underline:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+  background: -webkit-linear-gradient(360deg, rgb(82, 53, 163), rgb(187, 121, 218));
+}
+
+.legal--underline:hover:after { 
+  width: 100%; 
+  left: 0; 
+}

@@ -1,0 +1,125 @@
+@import "../1_Variables/_variables.scss";
+@import '../2_Mixins/_mixins.scss';
+@import 'menu--template';
+@import '../2-2_Animations/animations.scss';
+
+/* ======================================== MEDIA QUERIES ======================================== */
+
+
+@media (max-width: 1270px) {
+    h3 {
+        font-size: 4.5rem !important;
+    }
+}
+
+/* ======================================== Ecrans de moins de 750px ======================================== */
+
+
+
+@media (max-width: 750px) {
+    h3 {
+        font-size: 3rem !important;
+    }
+}
+
+
+/* ======================================== Ecrans de moins de 450px ======================================== */
+
+
+@media (max-width: 450px) {
+    body {
+        margin: 0rem !important;
+    }
+    h3 {
+        font-size: 2.5rem !important;
+    }
+}
+
+   
+
+/* ======================================== FIN DES MEDIA QUERIES ======================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Courgette|Croissant+One|Kaushan+Script&display=swap');
+
+%mainfont {
+    font-family: 'Courgette', lighter;
+}
+
+h3 {
+    font-weight: normal;
+    font-family: 'Kaushan Script', cursive;
+    background: -webkit-linear-gradient(360deg, #52A445, #BEFF7F);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    font-size: 6.5rem;
+    margin: 1rem 0rem;
+}     
+
+article
+    {
+        background-color: white;
+        box-shadow: 2px 2px 3px 4px rgb(219, 213, 213);
+    }
+
+.title
+    {
+        margin: 2rem 0rem;
+    }
+
+article h4
+    {
+        font-weight: bold;
+    }
+
+.prix {
+    font-weight: bold;
+}
+
+.main-title
+    {
+        font-weight: bold;
+    }
+
+.des-title
+    {
+        @extend %mainfont;
+        font-weight: bold;
+    }
+
+/* ================================= BRUSH STROKES ================================ */
+
+
+img {
+    height: 0.8vw;
+}
+
+.brush-title {
+    img {
+        width: 27vw;
+    }
+}
+
+.pr-title {
+        font-weight: bold;
+}
+
+.brush-title--2    {
+        img    {
+        width: 28vw;
+    }
+    }
+
+.main-title {
+        font-weight: bold;
+}
+
+
+.brush-title--3    {
+        img    {
+        width: 28vw;
+    }
+    }
+
+.des-title {
+        font-weight: bold;
+}

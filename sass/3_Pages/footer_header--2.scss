@@ -1,0 +1,136 @@
+@import "../1_Variables/_variables.scss";
+@import '../2_Mixins/_mixins.scss';
+@import '../2-2_Animations/animations.scss';
+
+/* ======================================== MEDIA QUERIES ======================================== */
+
+
+@media (max-width: 800px) {
+    header, footer {
+        width: 90vw;
+        margin: auto !important;
+    }
+}
+
+
+@media (max-width: 700px) {
+    footer a {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        align-content: space-between !important;
+    }
+}
+
+/* ======================================== Ecrans de moins de 600px ======================================== */
+
+
+@media (max-width: 600px) {
+    header, footer {
+        width: 98vw !important;
+    }
+    footer a {
+        font-size: 1rem !important;
+    }
+}
+
+/* ======================================== Ecrans de moins de 500px ======================================== */
+
+
+
+/* ======================================== Ecrans de moins de 450px ======================================== */
+
+
+@media (max-width: 450px) {
+    header {
+        margin: auto !important;
+    }
+}
+
+
+
+@media (max-width: 420px) {
+    footer a {
+        margin: 0rem !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+
+/* ======================================== Ecrans de moins de 330px ======================================== */
+
+@media (max-width: 330px) {
+    header {
+        margin: 0rem 0rem !important;
+    }
+}
+
+@media (max-width: 350px) {
+    footer {
+        margin: 0rem 0rem !important;
+        line-height: 0rem !important;
+    }
+}
+
+
+/* ======================================== Ecrans de moins de 270px ======================================== */
+
+@media (max-width: 270px) {
+    footer a {
+        font-size: 0.9rem !important;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+
+
+header
+    {
+        background-color: $header-bg;
+        text-align: center;
+        color: $color-main;
+        margin: 0rem 3rem;
+        padding: 0.2rem 0rem;
+        grid-area: header;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        z-index: 3;
+    }
+
+footer
+    {
+        display: flex;
+        max-height: 8%;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        grid-area: footer;
+        background-color: $header-bg;
+        color: $color-main;
+        position: sticky;
+        position: -webkit-sticky;
+        bottom: 0px;
+        margin: 0rem 3rem 0rem 3rem;
+        font-family: 'Montserrat';
+        z-index: 3;
+    }
+
+footer a
+    {
+        color: $color-main;
+        font-size: 1.3rem;
+        text-decoration: none;
+        position: relative;
+        
+        &:hover {
+            border-bottom: 1px solid $color-main;
+        }
+    }
+            
+
+a :visited
+    {
+        color: $color-main;
+        text-decoration: none;
+    }

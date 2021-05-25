@@ -1,0 +1,144 @@
+@import "../1_Variables/_variables.scss";
+@import '../2_Mixins/_mixins.scss';
+@import 'menu--template';
+@import '../2-2_Animations/animations.scss';
+
+/* ======================================== MEDIA QUERIES ======================================== */
+
+@media (max-width: 1100px) {
+    h3 {
+        font-size: 2.5rem !important;
+    }
+}
+
+/* ======================================== Ecrans de moins de 600px ======================================== */
+
+
+@media (max-width: 600px) {
+    h3 {
+        font-size: 2rem !important;   
+    }
+}
+
+/* ======================================== Ecrans de moins de 450px ======================================== */
+
+
+@media (max-width: 450px) {
+    body {
+        margin: 0rem !important;
+    }
+    h3 {
+        font-size: 1.5rem !important;
+    }
+}
+
+   
+
+/* ======================================== FIN DES MEDIA QUERIES ======================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Courgette|Croissant+One&display=swap');
+
+%mainfont {
+    font-family: 'Courgette', lighter;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 3.5rem;
+    background: -webkit-linear-gradient(0deg, rgb(204, 100, 16) 0% 30%, rgb(164, 91, 233), #905BFD);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}     
+
+article
+    {
+        background-color: #FFF5FE;
+        box-shadow: 2px 2px 3px 4px #ccc;
+    }
+
+.entrees {
+    color: #C67412;
+}
+
+.title
+    {
+        font-family: 'Croissant One', cursive;
+    }
+
+.prelude
+    {
+        color: #C67412;
+    }    
+
+.prix {
+    font-weight: bold;
+}
+
+.main-title
+    {
+        font-weight: bold;
+        color: #A56799;
+    }
+
+.orgue
+    {
+        color: #A56799;
+    }
+
+.des-title
+    {
+        @extend %mainfont;
+        font-weight: bold;
+        text-align: center;
+        color: #6E4CCC;
+    }
+
+.final
+    {
+        color: #6E4CCC;
+    }
+
+/* ================================= BRUSH STROKES ================================ */
+
+
+img {
+    height: 1vw;
+}
+
+.brush-title {
+    img {
+        width: 22vw;
+    }
+}
+
+.imgFlip {
+    transform: rotate(180deg);
+}
+
+.pr-title {
+        font-weight: bold;
+        color: #C67412;
+}
+
+
+.brush-title--2    {
+        img    {
+        width: 25vw;
+        }
+    }
+
+.main-title {
+        font-weight: bold;
+}
+
+
+.brush-title--3    {
+        img    {
+        width: 24vw;
+    }
+    }
+
+.des-title {
+        font-weight: bold;
+}
+

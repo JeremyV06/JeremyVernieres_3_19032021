@@ -1,0 +1,137 @@
+@import "../1_Variables/_variables.scss";
+@import '../2_Mixins/_mixins.scss';
+@import '../2-2_Animations/animations.scss';
+
+/* ======================================== MEDIA QUERIES ======================================== */
+
+
+/* ======================================== Ecrans de moins de 800px ======================================== */
+@media (max-width: 800px) {
+    .ok p {
+         margin: 2rem 9rem 2rem 9rem !important;
+     }
+ }
+
+ @media (max-width: 800px) {
+    .info {
+        margin: 2rem 9rem 2rem 9rem !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .charte {
+        margin: 2rem 9rem 2rem 9rem !important;
+    }
+}
+
+
+/* ======================================== Ecrans de moins de 600px ======================================== */
+
+@media (max-width: 600px) {
+    .info {
+        margin: 2rem 5rem 2rem 5rem !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .charte {
+        margin: 2rem 5rem 2rem 5rem !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .ok p {
+        margin: 2rem 5rem 2rem 5rem !important;
+    }
+}
+
+/* ======================================== Ecrans de moins de 450px ======================================== */
+
+@media (max-width: 450px) {
+    .info {
+        margin: 2rem 2rem 2rem 2rem !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .charte{
+        margin: 2rem 2rem 2rem 2rem !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .ok p {
+        margin: 2rem 2rem 2rem 2rem !important;
+    }
+}
+
+
+/* ======================================== Ecrans de moins de 300px ======================================== */
+
+
+@media (max-width: 300px) {
+    .info {
+        margin: 2rem 0.5rem 2rem 0.5rem !important;
+    }
+}
+
+@media (max-width: 300px) {
+    .charte{
+        margin: 2rem 0.5rem 2rem 0.5rem !important;
+    }
+}
+
+@media (max-width: 300px) {
+    .ok p {
+        margin: 2rem 0.5rem 2rem 0.5rem !important;
+    }
+}
+
+.index
+    {
+        margin-left: 1rem;
+    }
+
+.contact
+    {
+        margin-right: 1rem;
+    }
+
+h2 
+    {
+        color: #7E57C2;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+
+.info
+    {
+        margin: 2rem 12em 2rem 12rem;
+        text-align: justify;
+    }
+
+.charte
+    {
+        margin: 2rem 12rem 2rem 12rem;
+        text-align: justify;
+    }
+
+.charte h2
+    {
+        margin-top: 3rem;
+    }
+
+.ok p
+    {
+        margin: 2rem 12em 2rem 12rem;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+.legal-centered {
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+}

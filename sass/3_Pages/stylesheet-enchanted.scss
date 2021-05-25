@@ -1,0 +1,134 @@
+@import "../1_Variables/_variables.scss";
+@import '../2_Mixins/_mixins.scss';
+@import 'menu--template';
+@import '../2-2_Animations/animations.scss';
+
+/* ======================================== MEDIA QUERIES ======================================== */
+
+
+/* ======================================== Ecrans de moins de 600px ======================================== */
+
+
+@media (max-width: 600px) {
+        .prix {
+            margin-bottom: 2rem;
+    }
+}
+
+/* ======================================== Ecrans de moins de 450px ======================================== */
+
+
+@media (max-width: 450px) {
+    body {
+        margin: 0rem !important;
+    }
+}
+
+
+/* ======================================== FIN DES MEDIA QUERIES ======================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Courgette|Devonshire&display=swap');
+
+
+
+%mainfont {
+    font-family: 'Courgette', cursive;
+    font-weight: lighter;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 0rem;
+}
+
+h2 
+    {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.6rem;
+        grid-area: h2;
+    }
+
+.fa-music:before {
+    background: -webkit-linear-gradient(360deg, rgb(226, 74, 86), rgb(235, 148, 77));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+#title--img {
+    padding-top: 0.5rem;
+}
+
+article
+    {
+        background-color: #ffe2e2;
+        box-shadow: 2px 2px 3px 4px #ccc;
+    }
+
+.title
+    {
+        font-family: 'Devonshire', cursive;
+        h3 {
+            font-size: 3rem;
+        }
+    }
+
+article h4
+    {
+        font-size: 1.3rem;
+    }
+
+.prix {
+    font-weight: bold;
+}
+
+.end-title
+    {
+        grid-area: end-title;
+        text-align: center;
+        font-family: 'Devonshire', cursive;
+    }
+
+#end--img {
+    margin-right: 1.5rem;
+}
+
+/* ================================= BRUSH STROKES ================================ */
+
+
+img {
+    height: 1vw;
+}
+
+.brush-title {
+    img {
+        width: 29vw;
+    }
+}
+
+.pr-title {
+        font-weight: bold;
+}
+
+
+.brush-title--2    {
+        img    {
+        width: 26vw;
+    }
+    }
+
+.main-title {
+        font-weight: bold;
+}
+
+
+.brush-title--3    {
+        img    {
+        width: 25vw;
+    }
+    }
+
+.des-title {
+        font-weight: bold;
+}
