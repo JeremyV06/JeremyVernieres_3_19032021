@@ -1,0 +1,50 @@
+/* ======================================== Ecrans de moins de 920px ======================================== */
+@media (max-width: 920px) {
+  .menu {
+    width: 80% !important;
+  }
+}
+/* ======================================== Ecrans de moins de 800px ======================================== */
+@media (max-width: 800px) {
+  .menu {
+    width: 90% !important;
+  }
+}
+/* ======================================== Ecrans de moins de 750px ======================================== */
+@media (max-width: 750px) {
+  .menu {
+    grid-auto-flow: column !important;
+    padding: 0rem 0.4rem !important;
+    grid-template-columns: 0.5fr 5fr 4fr 4fr 1.5fr 0.5fr !important;
+    grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
+  }
+}
+/* ======================================== Ecrans de moins de 600px ======================================== */
+@media (max-width: 600px) {
+  .menu--info_price {
+    flex-flow: column wrap !important;
+  }
+  .menu--info_price p {
+    text-align: center !important;
+    margin-top: 0rem;
+    padding: 0rem 1rem;
+    line-height: 1.2rem;
+  }
+}
+/* ======================================== Ecrans de moins de 485px ======================================== */
+@media (max-width: 485px) {
+  .menu {
+    grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
+  }
+}
+/* ====================================================================================================================== */
+.menu {
+  display: grid;
+  margin: auto;
+  width: 70%;
+  margin-bottom: 3rem;
+  grid-template-columns: 1fr 3.5fr 4fr 3fr 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 5px;
+  grid-template-areas: ". . . . . ." ". h3 h3 h3 h3 ." ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title " ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." ". end-title end-title end-title end-title ." ". . . . . .";
+}

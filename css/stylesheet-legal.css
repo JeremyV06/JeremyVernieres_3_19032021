@@ -1,0 +1,345 @@
+@charset "UTF-8";
+/* ===================================== ANIMATION WIGGLE NAV =============================== */
+.legal:hover {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.index:hover {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.contact:hover {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+/* ============================= ANIMATION TROIS POINTS =========================== */
+.dots {
+  content: ".";
+  animation: dots 1.2s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: #FFCA28;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  80%, 100% {
+    text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 #FFCA28;
+  }
+}
+/* ========================= ANIMATION ZOOM SUR ITEMS MENU ====================== */
+.zoom-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out 0s;
+}
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .french .zoom-wrapper:hover {
+    transform: scale(1.2) !important;
+    -ms-transform: scale(1.2) !important;
+    -moz-transform: scale(1.2) !important;
+    -webkit-transform: scale(1.2) !important;
+    -o-transform: scale(1.2) !important;
+  }
+}
+@media (min-width: 1000px) {
+  .zoom-wrapper:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.4) !important;
+    -ms-transform: scale(1.4) !important;
+    -moz-transform: scale(1.4) !important;
+    -webkit-transform: scale(1.4) !important;
+    -o-transform: scale(1.4) !important;
+    opacity: 0.5 !important;
+  }
+}
+/* ================================== ANIMATION SOULIGNEMENT =================================== */
+.enchanted--underline:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  background: black;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+}
+
+.enchanted--underline:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* French entrée */
+.french--underline:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+  background: #C67412;
+}
+
+.french--underline:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* French plat */
+.french--underlineTwo:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+  background: #A56799;
+}
+
+.french--underlineTwo:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* French dessert */
+.french--underlineThree:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+  background: #6E4CCC;
+}
+
+.french--underlineThree:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.papilles--underline:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+  background: -webkit-linear-gradient(360deg, #0e0eac, #67aef1);
+}
+
+.papilles--underline:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.gout--underline:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+  background: -webkit-linear-gradient(360deg, #52A445, #BEFF7F);
+}
+
+.gout--underline:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.legal--underline:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+  background: -webkit-linear-gradient(360deg, #5235a3, #bb79da);
+}
+
+.legal--underline:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* ======================================== MEDIA QUERIES ======================================== */
+/* ======================================== Ecrans de moins de 800px ======================================== */
+@media (max-width: 800px) {
+  .ok p {
+    margin: 2rem 9rem 2rem 9rem !important;
+  }
+}
+@media (max-width: 800px) {
+  .info {
+    margin: 2rem 9rem 2rem 9rem !important;
+  }
+}
+@media (max-width: 800px) {
+  .charte {
+    margin: 2rem 9rem 2rem 9rem !important;
+  }
+}
+/* ======================================== Ecrans de moins de 600px ======================================== */
+@media (max-width: 600px) {
+  .info {
+    margin: 2rem 5rem 2rem 5rem !important;
+  }
+}
+@media (max-width: 600px) {
+  .charte {
+    margin: 2rem 5rem 2rem 5rem !important;
+  }
+}
+@media (max-width: 600px) {
+  .ok p {
+    margin: 2rem 5rem 2rem 5rem !important;
+  }
+}
+/* ======================================== Ecrans de moins de 450px ======================================== */
+@media (max-width: 450px) {
+  .info {
+    margin: 2rem 2rem 2rem 2rem !important;
+  }
+}
+@media (max-width: 450px) {
+  .charte {
+    margin: 2rem 2rem 2rem 2rem !important;
+  }
+}
+@media (max-width: 450px) {
+  .ok p {
+    margin: 2rem 2rem 2rem 2rem !important;
+  }
+}
+/* ======================================== Ecrans de moins de 300px ======================================== */
+@media (max-width: 300px) {
+  .info {
+    margin: 2rem 0.5rem 2rem 0.5rem !important;
+  }
+}
+@media (max-width: 300px) {
+  .charte {
+    margin: 2rem 0.5rem 2rem 0.5rem !important;
+  }
+}
+@media (max-width: 300px) {
+  .ok p {
+    margin: 2rem 0.5rem 2rem 0.5rem !important;
+  }
+}
+.index {
+  margin-left: 1rem;
+}
+
+.contact {
+  margin-right: 1rem;
+}
+
+h2 {
+  color: #7E57C2;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.info {
+  margin: 2rem 12em 2rem 12rem;
+  text-align: justify;
+}
+
+.charte {
+  margin: 2rem 12rem 2rem 12rem;
+  text-align: justify;
+}
+
+.charte h2 {
+  margin-top: 3rem;
+}
+
+.ok p {
+  margin: 2rem 12em 2rem 12rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.legal-centered {
+  text-align: center;
+  list-style: none;
+  font-weight: bold;
+}
